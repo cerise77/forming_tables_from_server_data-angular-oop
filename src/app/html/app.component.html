@@ -1,0 +1,97 @@
+<div [ngClass]="{main:true}">
+  <div class="table-body-data">
+    <ul class="table-data">
+      <li>
+
+        <div class="table-row-header">
+
+          <div class="">
+            1
+          </div>
+          <div class="">
+            2
+          </div>
+          <div class="">
+            3
+          </div>
+          <div class="">
+            4
+          </div>
+          <div class="">
+            5
+          </div>
+          <div class="">
+            6
+          </div>
+          <div class="">
+            7
+          </div>
+          <div class="">
+            8
+          </div>
+          <div class="">
+            9
+          </div>
+          <div class="">
+            10
+          </div>
+
+        </div>
+
+      </li>
+      <li>
+
+        <div class="whole-table" (click)="onDelete($event)" #wholetable>
+
+          <div class="table-add-r" #tableAdd (click)="onEdit($event)">
+
+              <div class="table-row-body" *ngFor="let table of tables">
+
+                  <div class="edit1">
+                    <p>{{table?.nn}}</p>
+                  </div>
+                  <div class="edit2">
+                    <p>{{table?.mm}}</p>
+                  </div>
+                  <div class="edit3">
+                    <p>{{table?.rr}}</p>
+                  </div>
+                  <div class="edit4">
+                    <p>{{table?.id}}</p>
+                  </div>
+                  <div class="edit5">
+                    <p>{{table?.createdAt}}</p>
+                  </div>
+                  <div class="edit6">
+                    <p>{{table?.id}}</p>
+                  </div>
+                  <div class="edit7">
+                    <p>{{table?.maxSize}}</p>
+                  </div>
+                  <div class="edit8">
+                      <p>{{table?.minSize}}</p>
+                  </div>
+                  <div class="edit9">
+                      <p>{{table?.updatedAt}}</p>
+                  </div>
+
+                <div >
+                  <a class="edit">edit</a>
+                  <!--<a class="save">save</a>-->
+                  <a class="delete">delete</a>
+                </div>
+
+              </div>
+
+              <div class="add-row" #addRoww></div>
+
+          </div>
+
+        </div>
+
+        <div class="button-add" (click)="onAdd($event)">add</div>
+
+        </li>
+    </ul>
+  </div>
+</div>

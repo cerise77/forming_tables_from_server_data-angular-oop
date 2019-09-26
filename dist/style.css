@@ -1,0 +1,139 @@
+@import url("http://fonts.googleapis.com/css?family=Roboto:500,300");
+
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block;}body{line-height:1;}ol,ul{list-style:none;}blockquote,q{quotes:none;}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;}table{border-collapse:collapse;border-spacing:0;}body{-webkit-text-size-adjust:none}
+
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 0.8em;
+}
+
+.whole {
+  display: flex;
+  flex-direction: row;
+}
+.whole company-app {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid black;
+}
+.whole industries-app {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid black;
+}
+.whole intangibles-app {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid black;
+}
+.whole platformtypes-app {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid black;
+}
+.whole sports-app {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid black;
+}
+.whole tangiblecategories-app {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid black;
+}
+.whole tangibleimpacts-app {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid black;
+}
+.whole platforms-app {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid black;
+}
+
+/*-----------new-row-add-------------*/
+.addDiv{
+  display: grid;
+  grid-template-columns: 0.8fr 0.6fr 1fr 1fr 1fr 1fr 1fr 1fr 0.7fr 1fr;
+  /*border-bottom: 1px solid #000;*/
+  border-left: 1px solid #000;
+}
+.addDiv > div{
+  padding: 5px 0;
+  border-right: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+.addDiv > .divD{
+  display: inline-block;
+}
+
+a.delete {
+  margin-right: 10px;
+  display: block;
+  border: solid 1px #000;
+  padding: 4px;
+  cursor: pointer;
+  color: #000;
+  text-decoration: none;
+  background: #dddedc;
+  height: 24px;
+  width: 50px;
+}
+a.edit {
+  margin-right: 10px;
+  margin-bottom: 7px;
+  display: block;
+  border: solid 1px #000;
+  padding: 4px;
+  cursor: pointer;
+  color: #000;
+  text-decoration: none;
+  background: #ddde00;
+  height: 24px;
+  width: 50px;
+}
+a.save {
+  margin: 10px 0;
+  display: block;
+  border: solid 1px #000;
+  padding: 4px;
+  cursor: pointer;
+  color: #000;
+  text-decoration: none;
+  background: #ddde00;
+  height: 24px;
+}
+.btnLarge {
+  margin: 10px auto !important;
+  border: solid 1px #000 !important;
+  padding: 4px !important;
+  cursor: pointer;
+  background: #ddde00;
+  height: 24px;
+  text-decoration: none;
+  text-align: center;
+  width: 100px;
+}
+
+/*----------------popup----------------*/
+.items{
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.textItems {
+  position: absolute;
+  width: 20px;
+  margin-top: 10px;
+}
+.textareaItems{
+  width: 90%;
+  margin-left: 20px;
+  padding: 4px;
+}
